@@ -1,5 +1,3 @@
-let itung = new HitungBerat(); 
-
 var pencet = document.getElementById('tombol');
 var tempat_error = document.getElementById('pesan-error');
 var box_hasil = document.getElementById('hasil');
@@ -19,7 +17,7 @@ pencet.addEventListener('click', function(){
     }
 
   
-    var hasilHitung = itung.hitung(m, p);
+    var hasilHitung = hitungBerat(m, p);
     if(hasilHitung.error){
         tempat_error.innerHTML = hasilHitung.error;
         tempat_error.style.color = "red";
