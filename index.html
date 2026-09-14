@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Tugas Web - Hitung Berat di Planet</title>
   </head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <body>
     <div class="kotak">
       <h2>Hitung Berat di Planet</h2>
@@ -19,16 +19,18 @@
       <label>Pilih Planet:</label><br />
       <select id="pilih-planet">
         <option value="" disabled selected>-- Pilih --</option>
-        <option value="merkurius">Merkurius</option>
-        <option value="venus">Venus</option>
-        <option value="mars">Mars</option>
-        <option value="jupiter">Jupiter</option>
-        <option value="saturnus">Saturnus</option>
-        <option value="uranus">Uranus</option>
-        <option value="neptunus">Neptunus</option>
+        <option value="merkurius">Merkurius (g=3.7 m/s)</option>
+        <option value="venus">Venus (g=8.87 m/s)</option>
+        <option value="mars">Mars (g=3.71 m/s)</option>
+        <option value="jupiter">Jupiter (g=24.79 m/s)</option>
+        <option value="saturnus">Saturnus (g=10.44 m/s)</option>
+        <option value="uranus">Uranus (g=8.69 m/s)</option>
+        <option value="neptunus">Neptunus (g=11.15 m/s)</option>
       </select>
       <br />
       <br />
+
+      <p>Hasil = berat di bumi * (gravitasi planet / 9.8)</p>
 
       <button id="tombol">Hitung</button>
 
@@ -37,6 +39,9 @@
       <div id="hasil">
         <br />
         <hr />
+        <div class="planet-visual">
+          <img id="planet-image" src="" alt="Planet" width="80" />
+        </div>
         <p>Berat kamu di <b id="nama-planet"></b> jadi:</p>
         <h3 id="angka-berat"></h3>
       </div>
